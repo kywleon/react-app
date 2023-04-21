@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from '@mui/material';
+import { Container , Box } from '@mui/material';
 import Typed from 'typed.js';
 
 const Home = () => {
@@ -22,9 +22,12 @@ const Home = () => {
     });
 
   return (
-   <Container maxWidth="lg">
-    <h1>Kwok Yew Weng</h1>
-    <span ref={el} />
+   <Container component={'section'} maxWidth="lg">
+    <Box>
+      <h1>Kwok Yew Weng</h1>
+      <span ref={el} />
+    </Box>
+   
    </Container> 
   )
 }
