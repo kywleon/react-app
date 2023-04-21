@@ -14,17 +14,13 @@ import {
   Routes,  
 } from "react-router-dom";
 
-import Button from '@mui/material/Button';
-
 function App() {
 
   return (
     <div className="App">
       <BrowserRouter>
         <Header />
-        <div>
-          <Button variant="contained">Hello World</Button>
-        </div>
+
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='about' element={<About />}></Route>

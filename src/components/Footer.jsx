@@ -1,9 +1,14 @@
 import React from 'react'
 
 const Footer = () => {
+
+  const date = new Date();
+  const year = date.getFullYear();
+  // console.log(year);
+
   return (
     <footer>
-      This is Footer
+      <div>Copyright © { year } by Kwok Yew Weng. All rights reserved.</div>
     </footer>
   )
 }
