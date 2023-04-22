@@ -1,5 +1,4 @@
 import React from 'react'
-import { Container , Box } from '@mui/material';
 import Typed from 'typed.js';
 
 const Home = () => {
@@ -9,7 +8,7 @@ const Home = () => {
 
     React.useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ["I'm Developer", "I'm Freelancer"],
+        strings: ["Developer", "Freelancer"],
         typeSpeed: 100,
         backSpeed: 50,
         loop: true,
@@ -22,13 +21,24 @@ const Home = () => {
     });
 
   return (
-   <Container component={'section'} maxWidth="lg">
-    <Box>
+
+   <>
+    <section id="hero" className="d-flex flex-column justify-content-center">
+    <div className="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Kwok Yew Weng</h1>
-      <span ref={el} />
-    </Box>
-   
-   </Container> 
+      <p>I'm <span ref={el} /> </p>
+      <div className="social-links">
+        <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
+        <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
+        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
+        <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
+        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+      </div>
+    </div>
+    
+  </section>
+  </>
+
   )
 }
 

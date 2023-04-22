@@ -1,10 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { Container } from '@mui/material';
 
 const Header = () => {
   return (
-    <header>
+    <header id="header" className="d-flex flex-column justify-content-center">
       <Navbar />
     </header>
   )

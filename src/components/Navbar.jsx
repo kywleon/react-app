@@ -1,24 +1,16 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
-import { Avatar, Box , Stack } from '@mui/material';
+import { Nav } from 'react-bootstrap';
 
 const Navbar = () => {
   return (
-    <Box sx={{ 
-      display: 'flex', 
-      padding: '20px',
-      }}	>
-      <Avatar/>
-      <Box>
-        <NavLink to='/'>Home</NavLink>
-      </Box>
-      <Box>
-        <NavLink to='about'>About</NavLink>
-      </Box>
-      <Box>
-        <NavLink to='contact'>Contact</NavLink>
-      </Box>
-    </Box>
+
+    <nav id="navbar" className="navbar nav-menu">
+      {/* <NavLink to='/' className='nav-link scrollto'>Home</NavLink>
+      <NavLink to='/#about' className='nav-link scrollto'>About</NavLink>
+      <NavLink to='/#contact' className='nav-link scrollto'>Contact</NavLink> */}
+    </nav>
+
   )
 }
 
