@@ -3,9 +3,14 @@ import React, { useEffect } from 'react'
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'boxicons/css/boxicons.min.css';
+import 'glightbox/dist/css/glightbox.min.css';
 
 import AOS from 'aos';
+import './assets/js/index.js';
 import 'aos/dist/aos.css';
+
+// import Swiper styles
+import 'swiper/css';
 
 import Footer from './components/Footer'
 import Header from './components/Header'
