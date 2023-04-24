@@ -3,6 +3,10 @@ import Typed from 'typed.js';
 import { Container } from 'react-bootstrap';
 import About from './About';
 import Skill from './Skill';
+import Resume from './Resume';
+import Portfolio from './Portfolio';
+import Contact from './Contact';
+import Service from './Service';
 
 const Home = () => {
 
@@ -45,6 +49,10 @@ const Home = () => {
   <main id="main">
     <About />
     <Skill />
+    <Resume />
+    <Portfolio />
+    <Service />
+    <Contact />
   </main>
   </>
 

@@ -2,6 +2,7 @@ import AOS from 'aos';
 import GLightbox from 'glightbox/dist/js/glightbox.min.js';
 import Swiper from 'swiper';
 import PureCounter from "@srexi/purecounterjs";
+import Isotope from 'isotope-layout';
 
 (function() {
     "use strict";
