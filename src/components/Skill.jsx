@@ -1,17 +1,39 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react';
+import { Container , Row } from 'react-bootstrap';
+import 'waypoints/lib/noframework.waypoints';
 
 const Skill = () => {
+
+  const skillsContentRef = useRef(null);
+
+  useEffect(() => {
+    if (skillsContentRef.current) {
+      new Waypoint({
+        element: skillsContentRef.current,
+        offset: '80%',
+        handler: function(direction) {
+          console.log(('I am 80% from the top of the window'))
+          const progressBars = document.querySelectorAll('.progress .progress-bar');
+          progressBars.forEach((el) => {
+            el.style.width = el.getAttribute('aria-valuenow') + '%';
+          });
+        }
+      });
+    }
+  }, []);
+
+
   return (
     <>
       <section id="skills" className="skills section-bg">
-      <div className="container" data-aos="fade-up">
+      <Container data-aos="fade-up">
 
         <div className="section-title">
           <h2>Skills</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
-        <div className="row skills-content">
+        <Row className="skills-content" ref={skillsContentRef}>
 
           <div className="col-lg-6">
 
@@ -63,9 +85,9 @@ const Skill = () => {
 
           </div>
 
-        </div>
+        </Row>
 
-      </div>
+      </Container>
     </section>
     </>
   )
