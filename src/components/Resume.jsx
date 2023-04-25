@@ -10,7 +10,7 @@ const Resume = () => {
 
         <div className="section-title">
           <h2>Resume</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          {/* <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> */}
         </div>
 
         <Row>
@@ -28,40 +28,40 @@ const Resume = () => {
 
             <h3 className="resume-title">Education</h3>
             <div className="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
+              <h4>Bachelor's Degree in Computer Science/Information Technology</h4>
+              <h5>2018 - 2019</h5>
+              <p><em>UCSI University</em></p>
+              {/* <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> */}
             </div>
             <div className="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+              <h4>Diploma in Computer Science/Information Technology</h4>
+              <h5>2015 - 2017</h5>
+              <p><em>UCSI University</em></p>
+              {/* <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p> */}
             </div>
           </div>
           <div className="col-lg-6">
             <h3 className="resume-title">Professional Experience</h3>
             <div className="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
+              <h4>Lead Software Engineer</h4>
+              <h5>Apr 2021 - Present</h5>
+              {/* <p><em>Experion, New York, NY </em></p> */}
               <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+                <li>My duty is supervise our project client progress, monitoring subordinate work tasks.</li>
+                <li>Fix all the bug issue and update change request from client which related frontend (CSS,Javascript, Jquery ,PHP and API).</li>
+                <li>Integrate API new function from backend to frontend to existing project</li>
               </ul>
             </div>
             <div className="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
+              <h4>Junior WordPress Developer</h4>
+              <h5>July 2020 - Mar 2021</h5>
+              {/* <p><em>Stepping Stone Advertising, New York, NY</em></p> */}
+              <p>My duty was developed websites with WordPress for our client. The project related many field like payment gateway and E-commerce. In this role need study WordPress pure core (PHP) and custom plugin and theme to meet expected to our client.</p>
               <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+                <li>To Develop & build responsive websites with PHP, CSS ,HTML ,JavaScript, Jquery and MySQL Database</li>
+                <li>To support and maintain the existing websites and client websites</li>
+                <li>To troubleshoot and fix software bugs</li>
+                <li>To ensure our software documentation is up-to-date, and continuous development and research on modern web technologies.</li>
               </ul>
             </div>
           </div>

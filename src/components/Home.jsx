@@ -15,7 +15,7 @@ const Home = () => {
 
     React.useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ["Developer", "Freelancer"],
+        strings: ["Web Developer", "Software Engineer","Freelancer"],
         typeSpeed: 100,
         backSpeed: 50,
         loop: true,
@@ -39,7 +39,7 @@ const Home = () => {
         <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
         <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
         <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a> */}
-        <a href="#" className="google-plus"><i className="bx bxl-whatsapp"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=60136465907" className="google-plus"><i className="bx bxl-whatsapp"></i></a>
         <a href="https://www.linkedin.com/in/kwok-yew-weng-6a08331a9/" className="linkedin"><i className="bx bxl-linkedin"></i></a>
       </div>
     </Container>
