@@ -7,28 +7,26 @@ const Footer = () => {
   // console.log(year);
 
   useEffect(() => {
+    const backToTop = document.querySelector('.back-to-top')
 
-    let backtotop = document.querySelector(".back-to-top");
-
-    if (backtotop) {
-      const toggleBacktotop = () => {
+    if (backToTop) {
+      const toggleBackToTop = () => {
         if (window.scrollY > 100) {
-          backtotop.classList.add('active')
+          backToTop.classList.add('active')
         } else {
-          backtotop.classList.remove('active')
+          backToTop.classList.remove('active')
         }
       }
 
-      toggleBackToTop()
-      window.addEventListener('load', toggleBacktotop)
+      toggleBackToTop();
+      window.addEventListener('load', toggleBackToTop)
       document.addEventListener('scroll', toggleBackToTop)
-    
 
-    return () => {
-      document.removeEventListener('scroll', toggleBackToTop);
+      return () => {
+        document.removeEventListener('scroll', toggleBackToTop)
+      }
     }
-  }
-  },[])
+  }, [])
 
 
   return (

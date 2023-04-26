@@ -25,7 +25,7 @@ const About = () => {
             <Row>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 November 1996</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>14 November 1996</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.developyw.com</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+013 6465907</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Selangor, Malaysia</span></li>

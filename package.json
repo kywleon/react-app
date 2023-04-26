@@ -13,6 +13,7 @@
     "@srexi/purecounterjs": "^1.5.0",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "bootstrap-icons": "^1.10.4",
     "boxicons": "^2.1.4",
     "glightbox": "^3.2.0",
     "isotope-layout": "^3.0.6",
