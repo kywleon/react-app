@@ -1,10 +1,34 @@
-import React from 'react'
+import React , { useEffect } from 'react'
 
 const Footer = () => {
 
   const date = new Date();
   const year = date.getFullYear();
   // console.log(year);
+
+  useEffect(() => {
+
+    let backtotop = document.querySelector(".back-to-top");
+
+    if (backtotop) {
+      const toggleBacktotop = () => {
+        if (window.scrollY > 100) {
+          backtotop.classList.add('active')
+        } else {
+          backtotop.classList.remove('active')
+        }
+      }
+
+      toggleBackToTop()
+      window.addEventListener('load', toggleBacktotop)
+      document.addEventListener('scroll', toggleBackToTop)
+    
+
+    return () => {
+      document.removeEventListener('scroll', toggleBackToTop);
+    }
+  }
+  },[])
 
 
   return (
