@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useEffect }  from 'react'
 import portImg1 from '../assets/img/portfolio/portfolio-1.jpg'
 import portImg2 from '../assets/img/portfolio/portfolio-2.jpg'
 import portImg3 from '../assets/img/portfolio/portfolio-3.jpg'
@@ -9,10 +9,69 @@ import portImg7 from '../assets/img/portfolio/portfolio-7.jpg'
 import portImg8 from '../assets/img/portfolio/portfolio-8.jpg'
 import portImg9 from '../assets/img/portfolio/portfolio-9.jpg'
 
+import AOS from 'aos';
+import GLightbox from 'glightbox/dist/js/glightbox.min';
+import Swiper from 'swiper';
+import Isotope from 'isotope-layout';
+
 import { Container , Row } from 'react-bootstrap';
 
 
 const Portfolio = () => {
+
+  useEffect(() => {
+    let portfolioContainer = document.querySelector(".portfolio-container");
+    if (portfolioContainer) {
+      let portfolioIsotope = new Isotope(portfolioContainer, {
+        itemSelector: ".portfolio-item",
+      });
+
+      let portfolioFilters = document.querySelectorAll("#portfolio-flters li");
+
+      portfolioFilters.forEach((el) => {
+        el.addEventListener("click", function (e) {
+          e.preventDefault();
+          portfolioFilters.forEach((el) => {
+            el.classList.remove("filter-active");
+          });
+          this.classList.add("filter-active");
+
+          portfolioIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+          portfolioIsotope.on("arrangeComplete", function () {
+            AOS.refresh();
+          });
+        });
+      });
+    }
+
+    const portfolioLightbox = GLightbox({
+      selector: ".portfolio-lightbox",
+    });
+
+    const portfolioDetailsLightbox = GLightbox({
+      selector: ".portfolio-details-lightbox",
+      width: "90%",
+      height: "90vh",
+    });
+
+    new Swiper(".portfolio-details-slider", {
+      speed: 400,
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+        clickable: true,
+      },
+    });
+  }, []);
+
+
   return (
     <>
 <section id="portfolio" className="portfolio section-bg">
