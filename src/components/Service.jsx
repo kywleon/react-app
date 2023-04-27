@@ -11,7 +11,7 @@ const Service = () => {
 
         <div className="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          {/* <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> */}
         </div>
 
         <Row>
@@ -24,8 +24,8 @@ const Service = () => {
                 </svg>
                 <i className="bx bxl-dribbble"></i>
               </div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4><a href="">Client-focused approach</a></h4>
+              <p>We prioritize understanding and meeting your needs.</p>
             </div>
           </div>
 
@@ -37,8 +37,8 @@ const Service = () => {
                 </svg>
                 <i className="bx bx-file"></i>
               </div>
-              <h4><a href="">Sed Perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4><a href="">Efficient project management</a></h4>
+              <p>Our plan ensures timely delivery.</p>
             </div>
           </div>
 
@@ -50,8 +50,8 @@ const Service = () => {
                 </svg>
                 <i className="bx bx-tachometer"></i>
               </div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4><a href="">High-quality deliverables</a></h4>
+              <p>We provide reliable and scalable solutions.</p>
             </div>
           </div>
 
@@ -63,8 +63,8 @@ const Service = () => {
                 </svg>
                 <i className="bx bx-layer"></i>
               </div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4><a href="">Technical support</a></h4>
+              <p>We offer worry-free usage and post-project support.</p>
             </div>
           </div>
 
@@ -76,8 +76,8 @@ const Service = () => {
                 </svg>
                 <i className="bx bx-slideshow"></i>
               </div>
-              <h4><a href="">Dele Cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
+              <h4><a href="">Adherence to industry standards</a></h4>
+              <p>We follow best practices to ensure compliance.</p>
             </div>
           </div>
 
@@ -89,8 +89,8 @@ const Service = () => {
                 </svg>
                 <i className="bx bx-arch"></i>
               </div>
-              <h4><a href="">Divera Don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
+              <h4><a href="">Data security</a></h4>
+              <p>We protect your data with strict security measures and policies.</p>
             </div>
           </div>
 
