@@ -98,11 +98,11 @@ const Portfolio = () => {
             <div className="portfolio-wrap">
               <img src={portImg1} className="img-fluid" alt=""/>
               <div className="portfolio-info">
-                <h4>App 1</h4>
-                <p>App</p>
+                <h4>3Q</h4>
+                <p>Landing Page</p>
                 <div className="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 1"><i className="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                  {/* <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Landing Page"><i className="bx bx-plus"></i></a> */}
+                  <a href="https://3qqueen.com" target="_blank"><i className="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -112,11 +112,11 @@ const Portfolio = () => {
             <div className="portfolio-wrap">
               <img src={portImg2} className="img-fluid" alt=""/>
               <div className="portfolio-info">
-                <h4>Web 3</h4>
-                <p>Web</p>
+                <h4>Daijobu</h4>
+                <p>Landing Page</p>
                 <div className="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Web 3"><i className="bx bx-plus"></i></a>
-                  <a href="portfolio-details.html" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
+                  {/* <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="Landing Page"><i className="bx bx-plus"></i></a> */}
+                  <a href="https://www.daijobu.com.my" target="_blank"><i className="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ const Portfolio = () => {
                 <h4>App 2</h4>
                 <p>App</p>
                 <div className="portfolio-links">
-                  <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus"></i></a>
+                  {/* <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" className="portfolio-lightbox" title="App 2"><i className="bx bx-plus"></i></a> */}
                   <a href="portfolio-details.html" className="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i className="bx bx-link"></i></a>
                 </div>
               </div>

@@ -1,6 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useState , useEffect } from 'react';
 import { NavLink } from 'react-router-dom'
 import { Nav } from 'react-bootstrap';
+
+
+const handleScrollTo = (hash) => {
+  if (document.querySelector(hash)) {
+    window.scrollTo({
+      top: document.querySelector(hash).offsetTop,
+      behavior: 'smooth'
+    });
+  }
+};
+
+const handleClick = (e) => {
+  e.preventDefault();
+  const hash = e.currentTarget.hash;
+  const body = document.querySelector('body');
+  if (body.classList.contains('mobile-nav-active')) {
+    body.classList.remove('mobile-nav-active');
+    const navbarToggle = document.querySelector('.mobile-nav-toggle');
+    navbarToggle.classList.toggle('bi-list');
+    navbarToggle.classList.toggle('bi-x');
+  }
+  handleScrollTo(hash);
+};
 
 const Navbar = () => {
 
@@ -39,7 +62,35 @@ const Navbar = () => {
     };
   }, []);
 
+  const [isNavActive, setIsNavActive] = useState(false);
+
+  function toggleNav() {
+    setIsNavActive(!isNavActive);
+  }
+
+  useEffect(() => {
+    if (isNavActive) {
+      document.body.classList.add('mobile-nav-active');
+    } else {
+      document.body.classList.remove('mobile-nav-active');
+    }
+  },[isNavActive])
+
+
+  useEffect(() => {
+    const scrollElements = document.querySelectorAll('.scrollto');
+    scrollElements.forEach(element => element.addEventListener('click', handleClick));
+    return () => {
+      scrollElements.forEach(element => element.removeEventListener('click', handleClick));
+    };
+  }, []);
+
   return (
+
+   <>
+     {/* Mobile nav toggle button */}
+   {/* <button type="button" className="mobile-nav-toggle d-xl-none"><i class="bi bi-list mobile-nav-toggle"></i></button> */}
+    <i className={`bi mobile-nav-toggle d-lg-none ${isNavActive ? 'bi-x' : 'bi-list'}`} onClick={toggleNav}></i>
 
     <nav id="navbar" className="navbar nav-menu">
       <ul>
@@ -54,6 +105,7 @@ const Navbar = () => {
       <NavLink to='/#about' className='nav-link scrollto'>About</NavLink>
       <NavLink to='/#contact' className='nav-link scrollto'>Contact</NavLink> */}
     </nav>
+   </>
 
   )
 }

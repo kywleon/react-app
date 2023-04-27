@@ -1,4 +1,4 @@
-import React from 'react'
+import React , { useEffect , useRef }from 'react'
 import Typed from 'typed.js';
 import { Container } from 'react-bootstrap';
 import About from './About';
@@ -11,9 +11,9 @@ import Service from './Service';
 const Home = () => {
 
     // Create reference to store the DOM element containing the animation
-    const el = React.useRef(null);
+    const el = useRef(null);
 
-    React.useEffect(() => {
+    useEffect(() => {
       const typed = new Typed(el.current, {
         strings: ["Web Developer", "Software Engineer","Freelancer"],
         typeSpeed: 100,

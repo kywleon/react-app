@@ -48,7 +48,7 @@ const Resume = () => {
               {/* <p><em>Experion, New York, NY </em></p> */}
               <ul>
                 <li>My duty is supervise our project client progress, monitoring subordinate work tasks.</li>
-                <li>Fix all the bug issue and update change request from client which related frontend (CSS,Javascript, Jquery ,PHP and API).</li>
+                <li>Fix all the bug issue and update change request from client which related frontend (CSS,Javascript, JQuery ,PHP and API).</li>
                 <li>Integrate API new function from backend to frontend to existing project</li>
               </ul>
             </div>
@@ -58,7 +58,7 @@ const Resume = () => {
               {/* <p><em>Stepping Stone Advertising, New York, NY</em></p> */}
               <p>My duty was developed websites with WordPress for our client. The project related many field like payment gateway and E-commerce. In this role need study WordPress pure core (PHP) and custom plugin and theme to meet expected to our client.</p>
               <ul>
-                <li>To Develop & build responsive websites with PHP, CSS ,HTML ,JavaScript, Jquery and MySQL Database</li>
+                <li>To Develop & build responsive websites with PHP, CSS ,HTML ,JavaScript, JQuery and MySQL Database</li>
                 <li>To support and maintain the existing websites and client websites</li>
                 <li>To troubleshoot and fix software bugs</li>
                 <li>To ensure our software documentation is up-to-date, and continuous development and research on modern web technologies.</li>
