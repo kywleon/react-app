@@ -38,23 +38,23 @@ const Skill = () => {
           <div className="col-lg-6">
 
             <div className="progress">
-              <span className="skill">HTML <i className="val">100%</i></span>
+              <span className="skill">JavaScript <i className="val">100%</i></span>
               <div className="progress-bar-wrap">
                 <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div className="progress">
-              <span className="skill">CSS <i className="val">90%</i></span>
+              <span className="skill">React.js <i className="val">80%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div className="progress">
-              <span className="skill">JavaScript <i className="val">75%</i></span>
+              <span className="skill">Vue.js <i className="val">70%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
@@ -63,25 +63,73 @@ const Skill = () => {
           <div className="col-lg-6">
 
             <div className="progress">
-              <span className="skill">PHP <i className="val">80%</i></span>
-              <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div className="progress">
-              <span className="skill">WordPress/CMS <i className="val">90%</i></span>
+              <span className="skill">PHP <i className="val">90%</i></span>
               <div className="progress-bar-wrap">
                 <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
 
             <div className="progress">
-              <span className="skill">Photoshop <i className="val">55%</i></span>
+              <span className="skill">Laravel <i className="val">70%</i></span>
               <div className="progress-bar-wrap">
-                <div className="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
             </div>
+
+            <div className="progress">
+              <span className="skill">WordPress <i className="val">90%</i></span>
+              <div className="progress-bar-wrap">
+                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </Row>
+
+        <Row className="skills-content" ref={skillsContentRef}>
+
+          <div className="col-lg-6">
+
+            <div className="progress">
+              <span className="skill">HTML/CSS <i className="val">100%</i></span>
+              <div className="progress-bar-wrap">
+                <div className="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div className="progress">
+              <span className="skill">API <i className="val">90%</i></span>
+              <div className="progress-bar-wrap">
+                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="col-lg-6">
+
+            <div className="progress">
+              <span className="skill">MYSQL <i className="val">90%</i></span>
+              <div className="progress-bar-wrap">
+                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            {/* <div className="progress">
+              <span className="skill">Laravel <i className="val">70%</i></span>
+              <div className="progress-bar-wrap">
+                <div className="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div> */}
+
+            {/* <div className="progress">
+              <span className="skill">WordPress <i className="val">90%</i></span>
+              <div className="progress-bar-wrap">
+                <div className="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div> */}
+
 
           </div>
 
