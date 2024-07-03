@@ -8,6 +8,8 @@ import Portfolio from './Portfolio';
 import Contact from './Contact';
 import Service from './Service';
 
+import heroBg from '../assets/img/hero-bg.jpg';
+
 const Home = () => {
 
     // Create reference to store the DOM element containing the animation
@@ -30,7 +32,15 @@ const Home = () => {
   return (
 
    <>
-    <section id="hero" className="d-flex flex-column justify-content-center">
+    <section id="hero" className="d-flex flex-column justify-content-center"
+    style={{
+      width: '100%',
+      height: '100vh',
+      background: `url(${heroBg}) top right no-repeat`,
+      backgroundSize: 'cover',
+      position: 'relative',
+    }}
+    >
     <Container data-aos="zoom-in" data-aos-delay="100">
       <h1>Kwok Yew Weng</h1>
       <p>I'm <span ref={el} /> </p>
