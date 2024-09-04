@@ -1,4 +1,4 @@
-import React , { useEffect } from 'react'
+import React , { useEffect , useState } from 'react'
 
 const Footer = () => {
 
@@ -43,7 +43,7 @@ const Footer = () => {
             <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
             <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
           </div> */}
-          <div className="copyright">Copyright &copy; by <strong><span>Kwok Yew Weng</span></strong>. All rights reserved.
+          <div className="copyright">Copyright &copy; by <strong><span>Kwok Yew Weng</span></strong>. All rights reserved. { year }
         </div>
         </div>
       </footer>

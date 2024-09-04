@@ -1,8 +1,35 @@
-import React from 'react'
+import React , { useState , useEffect } from 'react'
 import aboutImg from '../assets/img/profile-img.jpg'
 import { Container , Row } from 'react-bootstrap';
 
-const About = () => {
+
+// const Detail = () => {
+
+//   return (
+//     <li><i className="bi bi-chevron-right"></i> <strong>{ }:</strong> <span>{ }</span></li>
+//   )
+  
+// }
+
+const About = ({ name , detail }) => {
+
+  const [age, setAge] = useState(0);
+
+  const dob = detail.dob;
+
+  useEffect(() => {
+
+    const birthDate = new Date(dob);
+
+    const today = new Date();
+
+    const age = today.getFullYear() - birthDate.getFullYear();
+
+    setAge(age);
+
+  }, [dob]);
+
+
   return (
     <>
     <section id="about" className="about">
@@ -20,20 +47,20 @@ const About = () => {
           <div className="col-lg-8 pt-4 pt-lg-0 content">
             <h3>Software Enginner &amp; Web Developer.</h3>
             <p className="fst-italic">
-            Hi, I am Kwok Yew Weng, who creates websites and applications that are optimized for performance, user-friendly, visually appealing, and focused on achieving business goals.
+            Hi, I am { name }, who creates websites and applications that are optimized for performance, user-friendly, visually appealing, and focused on achieving business goals.
             </p>
             <Row>
               <div className="col-lg-6">
                 <ul>
                   <li><i className="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>14 November 1996</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.developyw.com</span></li>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+013 6465907</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>013 6465907</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>City:</strong> <span>Selangor, Malaysia</span></li>
                 </ul>
               </div>
               <div className="col-lg-6">
                 <ul>
-                  <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>27</span></li>
+                  <li><i className="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{ age }</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Education:</strong> <span>Degree</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Email:</strong> <span>kywleon@gmail.com</span></li>
                   <li><i className="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
