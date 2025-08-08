@@ -1,0 +1,12 @@
+version: "3.8"
+services:
+  vite-app:
+    container_name: react-portfolio
+    build: .
+    ports:
+      - "5176:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    stdin_open: true
+    tty: true
